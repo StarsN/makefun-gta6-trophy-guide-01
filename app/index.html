@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum Atlas — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23ffb347'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="topbar">
+  <div id="brand">
+    <div id="brand-mark" aria-hidden="true">LA</div>
+    <div id="brand-text">
+      <h1 id="app-title">Leonida Platinum Atlas</h1>
+      <p id="app-subtitle">Grand Theft Auto VI — the official 55-trophy list, guided and tracked. 1 platinum · 2 gold · 6 silver · 46 bronze · 28 hidden.</p>
+    </div>
+  </div>
+  <div id="progress-summary">
+    <div id="progress-big"><span id="earned-count">0</span><span id="earned-total"> / 55</span></div>
+    <div id="progress-bar"><div id="progress-fill"></div></div>
+    <div id="progress-percent">0% earned</div>
+    <div id="grade-chips"></div>
+  </div>
+</header>
+
+<nav id="toolbar" aria-label="Guide controls">
+  <div id="view-tabs" role="tablist">
+    <button id="tab-guide" class="tab active" type="button">Guide &amp; Tracker</button>
+    <button id="tab-roadmap" class="tab" type="button">Roadmap to Platinum</button>
+    <button id="tab-missables" class="tab" type="button">Missables <span id="missable-count" class="pill"></span></button>
+  </div>
+  <div id="filter-row">
+    <input id="search-box" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+    <select id="grade-filter" aria-label="Filter by grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+    <select id="kind-filter" aria-label="Filter by kind">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="side">Side missions</option>
+      <option value="collectible">Collectibles</option>
+      <option value="activity">Activities</option>
+      <option value="feat">Free-roam feats</option>
+      <option value="completion">Completion</option>
+    </select>
+    <select id="status-filter" aria-label="Filter by progress">
+      <option value="all">Earned &amp; remaining</option>
+      <option value="earned">Earned only</option>
+      <option value="remaining">Remaining only</option>
+    </select>
+    <label id="missable-toggle" class="check"><input id="missable-only" type="checkbox"> Missable only</label>
+    <label id="spoiler-toggle" class="check"><input id="spoiler-mode" type="checkbox"> Spoiler mode: hide story trophies until earned</label>
+  </div>
+  <div id="io-row">
+    <button id="export-button" type="button">Export progress</button>
+    <label id="import-label" class="button-like">Import progress<input id="import-file" type="file" accept="application/json,.json" hidden></label>
+    <button id="reset-button" type="button">Reset</button>
+    <span id="io-note">Progress is saved in this browser (localStorage). Export it to a file to keep or move it.</span>
+  </div>
+</nav>
+
+<main id="layout">
+  <section id="guide-view">
+    <div id="list-column">
+      <p id="result-count"></p>
+      <div id="trophy-list"></div>
+    </div>
+    <aside id="detail-pane" aria-label="Trophy guide">
+      <div id="detail-empty">
+        <h2>Pick a trophy</h2>
+        <p>Every one of the 55 official PlayStation 5 trophies is on the left, with its official name, description and grade. Pick one to read its guide: what to do, where and how, when it can be missed — and the sources each guide cites.</p>
+        <p id="detail-sources-note">Names, descriptions, grades and hidden flags: the official list as published by PlayStation and listed by Exophase. Progress counts PlayStation tracks: PSNProfiles. Guides: our own words, written from the official descriptions for this guide.</p>
+      </div>
+      <div id="detail-content" hidden></div>
+    </aside>
+  </section>
+
+  <section id="roadmap-view" hidden>
+    <h2 id="roadmap-title">Roadmap to the platinum</h2>
+    <p id="roadmap-intro">The order to earn all 55 in: the story first — with the three missable-flagged set-pieces watched for as they pass — then the people of Leonida, activities, collectibles and the map, free-roam feats and money, and 100% completion last. The roadmap and the missable flags are built from the official trophy descriptions; every stage shows its own progress.</p>
+    <div id="roadmap-stages"></div>
+  </section>
+
+  <section id="missables-view" hidden>
+    <h2 id="missables-title">Missable trophies — flagged from the official descriptions</h2>
+    <p id="missables-note"></p>
+    <div id="missable-list"></div>
+  </section>
+</main>
+
+<footer id="footer">
+  <p id="footer-sources">Data sources: Exophase — Grand Theft Auto VI (PSN) trophy list (official names, descriptions, grades, hidden flags): <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">exophase.com/game/grand-theft-auto-vi-psn/trophies/</a> · PSNProfiles — Grand Theft Auto VI trophies (grades and the progress counts PlayStation tracks): <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">psnprofiles.com/trophies/43531-grand-theft-auto-vi</a>. Every guide is written for this entry in its own words from the official descriptions; the game launched 2026-11-19, and where a description pins down no exact step, the guide says so instead of inventing one. No Rockstar Games logo or artwork is used; the look is this guide's own.</p>
+</footer>
+
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
